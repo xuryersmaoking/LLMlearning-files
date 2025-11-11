@@ -1,0 +1,4 @@
+xcopy "C:\Users\33915\LLMlearning-files\transformer-notebook" "C:\Users\33915\llm-knowledge-base\transformer-notebook" /E /I /H
+git add .
+git commit -m "又一次更新9.24"
+git push origin main
