@@ -1,4 +1,22 @@
-xcopy "C:\Users\33915\LLMlearning-files\transformer-notebook" "C:\Users\33915\llm-knowledge-base\transformer-notebook" /E /I /H
+初始化本地仓库
+cd C:\Users\33915\LoRA-Banking77
+git init
 git add .
-git commit -m "又一次更新9.24"
-git push origin main
+git commit -m "Initial commit"
+在git创建空仓库后关联仓库
+git remote add origin https://github.com/xuryersmaoking/LoRA-Banking77.git
+git branch -M main
+设置代理网络，避免波动git config --global http.proxy http://127.0.0.1:33210  关闭代理用:git config --global unset http.proxy
+推送代码git push -u origin main
+
+
+拉取最新更新后的仓库：git pull origin main
+
+
+推送更新内容：
+1. 查看哪些文件被修改了：git status
+2. 把修改的文件加入暂存区（可以指定文件，或用 . 表示全部）：git add .
+3. 提交到本地仓库（写一个有意义的提交信息）：git commit -m "更新了模型训练脚本"
+4. 推送到 GitHub：git push origin main
+
+
